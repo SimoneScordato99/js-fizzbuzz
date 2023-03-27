@@ -25,8 +25,30 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 */
 
 
-for (mario = 1 ; mario <=100 ; mario++) {
+for (let mario = 0 ; mario <=100 ; mario++) {
     console.log(mario)
+    let numero = mario + 1;
+    let divPer1 = mario % 1 == 0
+    let divPer3 = mario % 3 == 0
+    let divPer5 = mario % 5 == 0
+    let divPer3e5 = (divPer3) && (divPer5)
+
+
+    if ( mario == divPer1){
+        document.querySelector(".row").innerHTML +=  `<div class="card bg-danger">${numero}</div>`
+
+    } else if ( mario == divPer1 && mario == divPer3){
+        console.log(divPer3)
+        document.querySelector(".row").innerHTML =  `<div class="card bg-light">fizz</div>`
+
+    } else if ( mario == divPer1 && mario == divPer5) {
+        console.log(divPer5)
+        document.querySelector(".row").innerHTML =  `<div>Buzz</div>`
+
+    } else if ( mario == divPer1 && mario == divPer3e5) {
+        console.log(divPer3e5)
+        document.querySelector(".row").innerHTML =  `<div>FizzBuzz</div>`
+    }
     
 
 

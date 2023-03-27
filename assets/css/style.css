@@ -1,3 +1,26 @@
 body {
     background-color: #083B4C;
 }
+
+.square {
+    width: calc(100% / 6 - 3%);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.square-fizzbuzz {
+    background-color:pink;
+}
+.square-buzz {
+    background-color:blue;
+    color: white;
+}
+.square-fizz {
+    background-color:red;
+    color: white;
+}
+.square-numero {
+    background-color:chartreuse;
+}
